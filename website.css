@@ -1,0 +1,449 @@
+a.active,
+a:hover {
+    opacity: 0.5;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #1C1D1C;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #5f5f5f;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 90px;
+}
+
+
+
+.sectionHeader {
+    margin-left: 450px;
+    margin-right: 75px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Jost;
+    color: #343348;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+
+.rectangle {
+    height: 400px;
+    width: 300px;
+    background-color: #1C1D1C;
+    position: sticky;
+    top: 100px;
+    margin-left: 75px;
+    margin-bottom: -400px;
+    user-select: none;
+    padding: 40px;
+
+}
+
+@media(max-width:1400px) {
+    .rectangle {
+        display: none;
+    }
+}
+
+
+.headerTOC {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Rethink Sans;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+
+.elementTOC {
+    margin-top: 40px;
+    text-align: left;
+    font-family: Rethink Sans;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+
+.left {
+    max-width: 35%;
+    margin-left: 450px;
+    margin-right: 50px;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.right {
+    max-width: 35%;
+    margin-left: 50px;
+    margin-right: 75px;
+    float: right;
+    margin-bottom: 25px;
+}
+
+
+
+
+.details {
+    flex: 1;
+    font-family: Open Sans;
+    margin-left: 450px;
+    margin-right: 75px;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.links {
+    flex: 1;
+    font-family: Open Sans;
+    margin-left: 450px;
+    margin-right: 75px;
+    font-size: 19px;
+    line-height: 50px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.equations {
+    margin-left: 450px;
+    margin-right: 75px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 35px;
+}
+
+sup {
+    vertical-align: 0;
+    position: relative;
+    bottom: 1ex;
+}
+
+sub {
+    vertical-align: 0;
+    position: relative;
+    top: 1ex;
+}
+
+.headerContainer {
+    background-image: url(images/windmills.jpg);
+    background-size: cover;
+    height: 100vh;
+    /*EVERYTHING FROM BELOW TO THE END OF CONTAINER::AFTER I DONT KNOW WHAT IT DOES, BUT IT WORKS*/
+    position: relative;
+    isolation: isolate;
+    padding-top: 40vh;
+    padding-bottom: 25vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: changeBackground 20s infinite;
+}
+
+@keyframes changeBackground {
+
+    0%,
+    100% {
+        background-image: url('images/windmills.jpg');
+    }
+
+    80% {
+        background-image: url('images/cornField.jpg');
+    }
+
+    60% {
+        background-image: url('images/solarPanels2.jpg');
+    }
+
+    40% {
+        background-image: url('images/nuclear.jpg');
+    }
+
+    20% {
+        background-image: url('images/hydropower.jpg');
+    }
+}
+
+.headerContainer::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    /*background: rgb(132, 159, 255);*/
+    opacity: .5;
+}
+
+.header {
+    font-weight: bold;
+    font-family: Jost;
+    text-align: center;
+    font-size: 100px;
+    color: #ffffff;
+    opacity: 100;
+    user-select: none;
+    letter-spacing: 5px;
+    background-position: center;
+    position: relative;
+}
+
+
+.solarContainer {
+    background-image: url(images/solarPanels.jpg);
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bioContainer {
+    background-image: url("images/cornField.jpg");
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+
+/*NEW HEADER*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/*UPDATED NAVBAR*/
+nav {
+    background-color: #1C1D1C;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.details {
+    padding-top: 60px;
+}
+
+/*FLHS LOGO*/
+
+label.logo,
+.logo a {
+    color: #c28136;
+    font-size: 45px;
+    font-family: Readex Pro;
+    margin-left: 90px;
+    line-height: 80px;
+    float: left;
+    user-select: none;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: White;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+.footer {
+    background-color: #1C1D1C;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPurpose {
+    color: white;
+    font-family: Rethink Sans;
+    font-size: 30px;
+    margin-bottom: 20px;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footerDescription {
+    font-family: Rethink Sans;
+    color: #bdbdbd;
+    line-height: 26px;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 200px;
+}
+
+
+.tabs:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.tabs:active {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+
+
+a:link,
+a:visited {
+    font-family: Readex Pro;
+
+}
+
+
+
+/*WEBSITE CODE*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#NJ {
+    fill: red;
+}
+
+svg path {
+    fill: #adadad;
+    stroke: #ffffff;
+    stroke-width: 0.5px;
+
+}
+
+svg path:hover {
+    fill: #40757a !important;
+    transition: 0.6s;
+    cursor: pointer;
+    /*we can choose to either have it fill, change opacity, or both*/
+}
+
+.data {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #343348;
+    font-family: Readex Pro;
+}
+
+/*BELOW IS THE CODE FOR THE IMAGE POPUP FOR THE INTERACTIVE MAP*/
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+#statistics-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 100px;
+}
+
+.table-row {
+    min-width: 200px;
+}
+
+
+th {
+    min-width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.statistic {
+    min-width: 200px;
+    font-size: 17px;
+    font-family: Open Sans;
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.value {
+    min-width: 200px;
+    font-size: 17px;
+    font-family: Open Sans;
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#statistics-table thead tr {
+    background-color: #1C1D1C;
+    color: white;
+    font-family: Open Sans;
+}
+
+#statistics-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}

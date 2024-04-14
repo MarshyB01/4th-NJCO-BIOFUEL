@@ -1,0 +1,990 @@
+<!--this is a comment in html-->
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <!--The meta elements are useless (i think), but we should have it anyways-->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width = device-width, intial-scale=1.0" />
+      <meta name="keywords" content="HTML, CSS" />
+      <meta
+        name="description"
+        content="Climate change is an ever growing issue throughout the globe.
+        We must utilize renewable energy sources"
+      />
+      <!--This line loads the css sheet!!-->
+      <link rel="stylesheet" href="../website.css" />
+      <link rel="icon" href="../images/FAVICON.svg" />
+      <title>Alternative Energy</title>
+      <!--Font loader (copy and pasted code from fonts.google.com)-->
+      <!--Readex Pro-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet"
+      />
+      <!--Jost-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet"
+      />
+      <!--Open Sans-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"
+      />
+
+      <style>
+        .details {
+          flex: 1;
+          font-family: Open Sans;
+          margin-left: 450px;
+          margin-right: 410px;
+          font-size: 19px;
+          line-height: 35px;
+          text-align: justify;
+        }
+
+        .center {
+          max-width: 35%;
+          margin-left: 625px;
+          margin-right: auto;
+          float: center;
+          margin-bottom: 25px;
+        }
+
+        .equations {
+          margin-left: 450px;
+          margin-right: 420px;
+          text-align: center;
+          font-size: 25px;
+          font-family: "Times New Roman", Times, serif;
+          line-height: 35px;
+        }
+      </style>
+      <!--.bioContainer {
+            background-image: url("images/cornField.jpg");
+            background-size: cover;
+            position: relative;
+            isolation: isolate;
+            padding-top: 20vh;
+            padding-bottom: 20vh;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+        }-->
+
+      <!-- Put .bioContainer in website.css, does not work in heading. The <style> is made to fit specifically for bioenergy.html-->
+    </head>
+
+    <body>
+      <nav>
+        <label class="logo">
+          <a href="https://flhs.flboe.com/">FLHS</a>
+        </label>
+        <ul>
+          <li><a href="../index.html" title="Home">Home</a></li>
+          <li><a href="solar.html" title="Solar">Solar</a></li>
+          <li><a href="nuclear.html" title="Nuclear">Nuclear</a></li>
+          <li><a href="bioEnergy.html" title="Biofuel">Biofuel</a></li>
+          <li>
+            <a href="map.html" title="Interactive Map">Interactive Map</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bioContainer">
+        <h1 class="header">BIOFUEL ENERGY</h1>
+      </div>
+
+      <h1
+        class="sectionHeader"
+        id="Introduction"
+        style="margin-left: auto; margin-right: auto"
+      >
+        Introduction
+      </h1>
+
+      <div class="rectangle">
+        <h1 class="headerTOC">Sections</h1>
+        <a class="elementTOC" href="#Introduction"> — Introduction</a>
+        <br />
+        <a class="elementTOC" href="#Benefits"> — Benefits & Limitations</a>
+        <br />
+        <a class="elementTOC" href="#Reactions"> — Chemcial Reactions</a>
+        <br />
+        <a class="elementTOC" href="#Convert">
+          — Converting From Biofuel to Electricity</a
+        >
+        <br />
+        <a class="elementTOC" href="#Sources"> — Sources</a>
+        <br />
+      </div>
+
+      <p class="details">
+        The transformation from biomass to biofuel is an extensive and
+        encouraging step towards the development of future sustainable energy
+        solutions. This renewable and alternative energy provides a solution to
+        several environmental, energy, and waste management issues. Created from
+        organic materials such as crops, agricultural residues, forestry
+        byproducts, and organic waste, biofuel provides a diverse number of
+        options for harvesting renewable energy. <br /><br />Solid biofuels,
+        such as wood pellets and agricultural residues like straw and corn
+        stover(stalks/stems, leaves, unused parts of plants, find common use in
+        residential, commercial, and industrial heating applications. Liquid
+        biofuels, notably ethanol and biodiesel, are considered a greener
+        substitute for gasoline and diesel in the transportation sector.
+        Ethanol, primarily produced through the fermentations found in crops, is
+        blended with gasoline to reduce emissions and enhance octane ratings.
+        Biodiesel, synthesized and produced from vegetable oils or animal fats,
+        offers a clean-burning alternative to diesel fuel, contributing to air
+        quality improvement and dependence on finite petroleum resources.
+        Biogas, the third major sector of biofuels, is mainly generated through
+        anaerobic digestion of organic matter. Composed of primary methane and
+        carbon dioxide, biogas can be utilized in many applications including
+        heating, electricity generation, and as a clean fuel for vehicles.
+      </p>
+      <br />
+      <br />
+      <div class="container">
+        <a
+          href="https://www.britannica.com/technology/biofuel#:~:text=biofuel%2C%20any%20fuel%20that%20is,%2C%20coal%2C%20and%20natural%20gas."
+          target="blank"
+        >
+          <img
+            class="center"
+            src="https://bareillyonline.com/wp-content/uploads/2024/03/1711846971-Ethanol-will-increase-corn-production-in-the-next-five-years-768x500.jpg"
+            alt="First img in Biofuel Section, Clipart Displaying Biofuel"
+            title="CLICK FOR SOURCE"
+          />
+        </a>
+      </div>
+      <br />
+      <p class="details">
+        These different types of biofuel share a common similarity, being
+        derived from organic resources that provide a better alternative than
+        their limited counterparts. With many benefits involved with biofuels,
+        there also lies an extensive process used to produce these alternative
+        fuels. In addition to the many benefits of biofuel technology, biofuel
+        is a possible sustainable answer to waste management problems;
+        controlling and disposing of organic waste out of the landfill, and
+        reducing greenhouse gas. Other examples will be provided in later
+        information, including the process for solid biofuels, liquid biofuels,
+        and biogasses. With many complex processes, organic resources that are
+        often seen as waste can be renewed and turned into more sustainable
+        energy, that provides efficient and cost-effective energy.<sup
+          ><a href="#1">[1]</a></sup
+        >
+      </p>
+
+      <br />
+      <br />
+
+      <!-- Changed to 30px-->
+      <h1
+        class="sectionHeader"
+        id="Benefits"
+        style="margin-left: auto; margin-right: auto; font-size: 30px"
+      >
+        Benefits & Limitations of Biofuel
+      </h1>
+
+      <p class="details">
+        The production of biofuel can greatly differ, depending on which fuel is
+        desired. For the process of liquid biofuels, such as biodiesel, or
+        bio-ethanol, the process often involves obtaining its original
+        component, oftentimes used as vegetable oils or animal fat. For biogas,
+        the main component mainly includes any biological wet waste that can be
+        decomposed through anaerobic digestion. In this process, bacteria are
+        able to digest the waste in low-oxygen environments, creating gasses
+        such as methane and carbon dioxide, which can both be used and harvested
+        to produce energy and electricity. As for solid biofuels, the main
+        component originally comes from solid organic biomass such as plants,
+        animal waste, and organic municipal waste. From these three methods,
+        they share a similar advantage. These processes often provide effective
+        use of biomass resources, which address waste management issues, whilst
+        promoting a sustainable environment.<sup><a href="#2">[2]</a></sup> As
+        compared to common greenhouse gasses, biomethane can reduce up to 30 to
+        70 percent of average greenhouse gas emissions.
+        <sup><a href="#3">[3]</a></sup>
+      </p>
+
+      <br />
+      <br />
+
+      <p class="details">
+        Despite this, the process of converting these fuels to usable energy
+        often requires combustion; there is a significant decrease in emissions
+        of greenhouse gasses compared to its fossil fuel counterparts. Compared
+        to natural methane, the biomethane created from biogas has great
+        potential as a clean energy source for many appliances including
+        heating, power generation, and automobile fuel. Compared to common
+        greenhouse gasses, biomethane can reduce up to 30 to 86 percent of
+        average greenhouse gas emissions in the US.
+        <sup><a href="#4">[4]</a></sup> This can help mitigate air pollution and
+        lessen the carbon footprint involved in its production. This energy
+        source, biofuel, is very flexible as it can be used for automobile fuel,
+        heat production, and electricity. Since organic waste is common and can
+        often be found in various regions, biofuel systems provide chances for
+        localized energy production, enabling local communities to be more
+        energy-independent than on centralized power networks.
+        <sup><a href="#5">[5]</a></sup>
+      </p>
+      <br />
+      <br />
+
+      <p class="details">
+        Yet despite the benefits of a greener environment and flexibility, there
+        are certain limitations on the production of biofuels. The main drawback
+        of the product is the need for a steady supply of organic feedstock to
+        maintain production. Though this may not often be an issue for highly
+        populated areas, localized regions may have issues meeting the quotas
+        required to maintain positive energy production. Similarly, proper
+        planning and management are needed due to the potential impact of
+        feedstock composition and availability. Most importantly, biofuel
+        infrastructure may result in financial difficulties due to the initial
+        creation and outgoing expense, especially on small scale. or
+        resource-constrained organizations. Yet despite these fuels being
+        created from organic waste, there is still the possibility of
+        contaminating the environment. Improper biofuel production may produce
+        odors and require proper, cautious disposal of digestate by-products.
+        <sup><a href="#6">[6]</a></sup>
+      </p>
+      <br />
+      <br />
+
+      <h1
+        class="sectionHeader"
+        id="Reactions"
+        style="margin-left: auto; margin-right: auto; font-size: 30px"
+      >
+        Chemcial Reactions/ Processes
+      </h1>
+
+      <p class="details">
+        The production of solid biofuels primarily involves the collection and
+        processing of biomass materials. As mentioned previously, these
+        materials may range from organic materials such as wood chips,
+        agricultural residue, and other solid organic waste. Once collected, the
+        materials undergo a drying process such as torrefaction or pyrolysis,
+        which involves heating the biomass to temperatures between 200 and 300 C
+        in the absence of oxygen to reduce its moisture content. This reduction
+        of moisture expels volatile molecules and allows the biomass to be more
+        efficient for combustion. Then, the dried biomass is subjected to
+        processes such as pelletization of briquetting. The dried biomass is
+        then subjected to mechanical processes such as grinding or chopping to
+        create manageable feedstock. Under this process, the dried product is
+        compressed into small dense pellets or briquettes, that are easy to
+        store, transport, and use. Pelletizing involves extruding the biomass
+        through a small hole, and then under high pressure and heat, compact
+        pellets are formed. Briquetting compresses the dried biomass to a
+        larger, and denser block, using a combination of pressure and binding
+        agents, to hold the biomass together. These solid biofuels produce
+        energy under combustion; the solid biomass reacts rapidly with oxygen
+        releasing carbon dioxide, water, and energy. The process of this can be
+        seen with the following equation: <sup><a href="#7">[7]</a></sup>
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <p class="equations">
+        CH<sub>1.44</sub>O<sub>0.66</sub> + 1.03O<sub>2</sub> →
+        0.72H<sub>2</sub>O + CO<sub>2</sub>
+        (+Heat)
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <p class="details">
+        The equation above shows the process of combustion of biomass. The first
+        reactant CH<sub>1.44</sub>O<sub>0.66</sub> represents the organic
+        compound undergoing combustion. This reactant is considered to be the
+        approximate combustible portion of biomass. However, this chemical
+        equation would slightly vary depending on the materials used during the
+        process of combustion, resulting in a differing amount of energy. The
+        second reactant Oxygen represents the current oxygen from the
+        surrounding environment. These reactants combined with a high
+        temperature environment of above 600 C, form the following products of
+        water vapor and carbon dioxide. Most importantly the (+Heat) shows that
+        the combustion reaction is exothermic, releasing heat energy also as a
+        product of the reaction. <sup><a href="#8">[8]</a></sup> This heat
+        generated can then be used and turned into usable energy through steam
+        turbines, CHP systems, or ORC systems. The energy generated from the
+        heat from the biomass can then be converted into electricity for a
+        variety of uses. Today, solid biofuels are typically used in heating
+        stems, or power plants for the generation of electricity.
+        <sup><a href="#9">[9]</a></sup>
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <p class="details">
+        The production of ethanol is commonly produced through the fermentation
+        of sugars present in crops; ex: corn, and sugarcane. This process first
+        begins with the extraction of sugar from the biomass; once extracted,
+        the sugar is fermented by microorganisms, generally bacteria and yeast,
+        to produce ethanol and carbon dioxide. For the process of corn ethanol
+        production, the corn is first milled and processed to release the
+        starch, allowing enzymes to convert it to simple sugars. Yeast is then
+        added to the sugar solution, which is then fermented into ethanol and
+        carbon dioxide.
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <p class="equations">
+        C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> → 2C<sub>2</sub>H<sub>5</sub>OH
+        + 2CO<sub>2</sub> + 2 ATP
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <p class="details">
+        This is the basic reaction of the fermentation of sugar.
+        <sup><a href="#10">[10]</a></sup>
+        The reactant or substrate for fermentation in this equation is glucose.
+        This molecule is further broken down under the anaerobic condition
+        mentioned above. As a result, Ethanol (2C<sub>2</sub>H<sub>5</sub>OH) is
+        created as a product of fermentation, with Carbon Dioxide
+        (2CO<sub>2</sub>) released as a byproduct and waste during the breakdown
+        of glucose. This process typically requires anaerobic conditions for
+        fermentation and often results in a mixture that contains 10-15%
+        ethanol. (Ethanol Production) Another process mentioned previously,
+        transesterification, is often used to produce biodiesel from vegetable
+        oils and animal fats. In this process, the fats or oils react with
+        alcohol (often methanol) in the presence of a catalyst from biodiesel
+        and glycerol. This process can be simplified to triglyceride (fat/oil) +
+        methanol → biodiesel + glycerol.
+      </p>
+
+      <!--Changed Width to 25%, Larger Image, Lower Quality-->
+      <div class="container">
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmansfield.energy%2F2023%2F05%2F24%2Fwhat-is-it-transesterification%2F&psig=AOvVaw2eqcKLEOr5DEZYK-lD1KNo&ust=1713143110081000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLC67sbBwIUDFQAAAAAdAAAAABAE."
+          target="blank"
+        >
+          <img
+            class="center"
+            src="https://mansfield.energy/wp-content/uploads/2023/05/TRANSESTERIFICATION-OF-BIODIESEL-600x425.jpg"
+            style="margin-left: 750px"
+            alt="Second Img of Biofuel Section, Shows Structure and Equation of transesterification"
+            title="CLICK FOR SOURCE"
+            width="25%"
+          />
+        </a>
+      </div>
+
+      <p class="details">
+        This reaction leads to the separation of the biodiesel and glycerol,
+        with the biodiesel floating on the top of the solution, with the
+        glycerol settling at the bottom, allowing easy collection of the
+        biodiesel. <sup><a href="#11">[11]</a></sup
+        >Under further processes such as purification and cleaning, the
+        biodiesel is purified to remove any residual contaminants. These
+        biofuels, unlike their counterparts, produce lower greenhouse emissions
+        of up to 74%.<sup><a href="#12">[12]</a></sup>
+        <sup><a href="#13">[13]</a></sup>
+      </p>
+
+      <br />
+      <br />
+
+      <p class="details">
+        Biogasses require certain oxygen conditions in which a biological
+        process occurs in the absence of oxygen, where microorganisms break down
+        organic matter into biogas, primarily consisting of methane (CH4) and
+        carbon dioxide (CO2), along with trace amounts of other gasses.
+        <sup><a href="#14">[14]</a></sup
+        >. Currently, transportation contributes to roughly 29% of the total
+        greenhouse emissions in the US. With the addition of biofuel sources,
+        the total greenhouse emission from transportation can be drastically
+        decreased by up to 6%<sup><a href="#15">[15]</a></sup
+        >. This process of producing biogas, like the previous fuels, requires
+        collecting materials which can include agricultural waste, manure,
+        municipal waste, plant material, sewage, or food waste. These materials
+        are then placed into a digester tank, where conditions including
+        temperature and pH are controlled to optimize the activity of anaerobic
+        bacteria. With a temperature range of around 31 to 34 C and a pH range
+        of between 7.6 and 8.0, the digestion process begins and is separated
+        into four major stages: hydrolysis, acidogenic, acetogenesis, and
+        methanogenesis. <sup><a href="#16">[16]</a></sup> Hydrolysis, the initial
+        stage involves complex organic compounds found in the original biomass
+        such as carbohydrates, proteins, and fats are broken down into simpler
+        soluble molecules. Enzymes produced by hydrolytic bacteria catalyze this
+        process. In this stage, these compounds are broken down further, with
+        carbohydrates broken into simple sugars, proteins into amino acids, and
+        fats into fatty acids and glycerol. This process is crucial for the
+        following stages as it breaks down polymers (large molecules) into
+        monomers that are accessible and able to be used by other bacteria in
+        the following stages.<sup><a href="#17">[17]</a></sup>
+        <sup><a href="#18">[18]</a></sup>
+      </p>
+      <br />
+      <br />
+      <p class="equations">
+        Hydrolysis <br />
+        C<sub>6</sub>H<sub>10</sub>O<sub>4</sub> + 2H<sub>2</sub>O →
+        C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 2H<sub>2</sub>
+      </p>
+
+      <br />
+      <br />
+      <p class="details">
+        The second stage, acidogenesis uses the previously soluble products from
+        hydrolysis, in which acidogenic/ fermentive bacteria further ferment and
+        break down the simpler molecules. These bacteria ferment the molecules
+        into volatile fatty acids (VFA) such as acetic acid, propionic acid, and
+        butyric acid. This fermentation also produces alcohol, hydrogen, and
+        carbon dioxide. As a result, the pH level of the digestion tank
+        decreases due to the accumulation of these acids.
+      </p>
+      <br />
+
+      <p class="equations">
+        Acidogenesis <br />
+        C<sub>3</sub>H<sub>7</sub>O<sub>2</sub>N + 2H<sub>2</sub>O →
+        C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> + NH<sub>3</sub> + CO<sub
+          >2</sub
+        >
+        + 2H<sub>2</sub> + ATP
+        <br />
+        C<sub>4</sub>H<sub>9</sub>O<sub>3</sub>N + H<sub>2</sub>O →
+        C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> + NH<sub>3</sub> + CO<sub
+          >2</sub
+        >
+        + H<sub>2</sub> + ATP
+        <br />
+        4CH<sub>3</sub>COCOO<sup>−</sup> + 4H<sub>2</sub>O →
+        5CH<sub>3</sub>COO<sup>−</sup> + 2HCO<sub>3</sub><sup>−</sup> + 3H<sup
+          >+</sup
+        >
+      </p>
+      <br />
+      <br />
+      <p class="details">
+        The third stage acetogenesis requires acetogenic bacteria to convert the
+        products of acidogenic (VFA, alcohols, and other products) into into
+        acetic acids, hydrogen, and carbon dioxide. These three products are the
+        main components used in the final stage of methanogenesis. This third
+        stage serves as a link between acidogenesis and methanogenesis, as it
+        ensures that non-methanogenic substrates are transformed into substances
+        that can be utilized by methanogens.<sup><a href="#19">[19]</a></sup>
+      </p>
+      <br />
+      <br />
+      <p class="equations">
+        Acetogenesis<br />
+        CH<sub>3</sub>CH<sub>2</sub>COO<sup>−</sup> + 3H<sub>2</sub>O ⇌
+        CH<sub>3</sub>COO<sup>−</sup> + H<sup>+</sup> + HCO<sub>3</sub
+        ><sup>−</sup> + 3H<sub>2</sub>
+        <br />
+        C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 2H<sub>2</sub>O ⇌
+        2CH<sub>3</sub>COOH + 2CO<sub>2</sub> + 4H<sub>2</sub>
+        <br />
+        CH<sub>3</sub>CH<sub>2</sub>OH + 2H<sub>2</sub>O ⇌ CH<sub>3</sub>COO<sup
+          >−</sup
+        >
+        + 2H<sub>2</sub> + H<sup>−</sup>
+      </p>
+
+      <br />
+      <br />
+
+      <div class="container">
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fengineering%2Facidogenesis&psig=AOvVaw2IL903XWj55IuIYtfdfRD8&ust=1713145029286000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCp7NjIwIUDFQAAAAAdAAAAABAE"
+          target="blank"
+        >
+          <img
+            class="center"
+            src="https://ars.els-cdn.com/content/image/3-s2.0-B9780444639929000069-f06-03-9780444639929.jpg"
+            style="margin-left: 790px"
+            alt="Third Img of Biofuel Section, Shows process of Biogass production"
+            title="CLICK FOR SOURCE"
+          />
+        </a>
+      </div>
+
+      <br />
+      <br />
+      <p class="details">
+        Once the substrates are transformed, the final stage occurs,
+        methanogenesis. This final stage of anaerobic digestion involves
+        methanogenic archaea converting the previous stage's acetic acid,
+        hydrogen, and carbon dioxide into methane and carbon dioxide, which
+        therefore creates/biogas. At this stage, there are two main pathways for
+        methane production, including acetoclastic methanogenesis where methane
+        is produced by splitting acetic acids into methane and carbon dioxide,
+        and hydrogenotrophic methanogenesis, in which methane can be produced
+        from carbon dioxide and hydrogen. These four stages all are sensitive
+        processes, greatly influenced by the digester's environmental
+        conditions.<sup><a href="#20">[20]</a></sup>
+        <sup><a href="#21">[21]</a></sup
+        >This entire process may range from a few weeks to a few months
+        depending on the materials digest. The biogas produced from this process
+        can be used as many sources of energy such as fuel for heating,
+        electricity generation, for vehicle fuel. Furthermore, the residual
+        digestate produced by this process can often serve as a nutrient-rich
+        fertilizer, further promoting a better eco-friendly environment.<sup
+          ><a href="#22">[22]</a></sup
+        >
+        Biofuel is a possible sustainable answer to waste management problems;
+        controlling and disposing of organic waste out of the landfills, and
+        reducing greenhouse gas.
+      </p>
+
+      <div class="container">
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fimages%2Fbiogas-reactor-working-principle-with-underground-structure-outline-diagram-labeled-educational-renewable-energy-production-pipeline-system-with-natural-resources-and-fermentation-vector-illustration%2F474909968&psig=AOvVaw0E1GtLRX-gCOo5Ec38m25E&ust=1713145424366000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIC8i5bKwIUDFQAAAAAdAAAAABAY"
+          target="blank"
+        >
+          <img
+            class="center"
+            src="https://as2.ftcdn.net/v2/jpg/04/74/90/99/1000_F_474909968_1vTjI8Nv9kfeBI7KKtWdq2Uqje0RiiSz.jpg"
+            style="margin-left: 650px"
+            alt="Fifth Img of Biofuel Section, Shows Clipart of Biogas Reactor"
+            title="CLICK FOR SOURCE"
+          />
+        </a>
+      </div>
+
+      <h1
+        class="sectionHeader"
+        id="Convert"
+        style="margin-left: auto; margin-right: auto; font-size: 30px"
+      >
+        Converting From Biofuel to Electricity
+      </h1>
+
+      <p class="details">
+        As mentioned above, the conversion of solid biofuels, such as wood
+        pellets/ agricultural residue requires combustion in which they are
+        burned in the presence of oxygen to release heat. Once the solid biofuel
+        becomes ignited, and provided enough oxygen, an oxidation reaction
+        occurs. This breaks down the solid fuel, breaking down complex organic
+        molecules into simpler compounds, releasing heat energy. This heat
+        generated from the combustion can then be used to produce electricity,
+        by using mechanical energy. The heat can be used to produce steam, which
+        can then generate mechanical energy through turbines, or electrical
+        generators. The pressure from the increasing amount of steam in turbines
+        converts the thermal energy of steam to mechanical energy which is then
+        transformed into electricity through electromagnetic induction in
+        generators. <sup><a href="#23">[23]</a></sup>
+      </p>
+      <br />
+      <br />
+      <div class="container">
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXO8Ha6B0vZI&psig=AOvVaw3jTD9BlJZapmEbxxRVnPFE&ust=1713146343353000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiE8c7NwIUDFQAAAAAdAAAAABAE"
+        >
+          <img
+            class="center"
+            src="https://i.ytimg.com/vi/XO8Ha6B0vZI/maxresdefault.jpg"
+            style="margin-left: 650px"
+            alt="Sixth Img of Biofuel Section, Shows Process of Combustion/ Machine Process"
+            title="CLICK FOR SOURCE"
+          />
+        </a>
+      </div>
+      <br />
+      <br />
+      <p class="details">
+        However, the conversion of liquid biofuels such as ethanol or biodiesel
+        follows a different process for the conversion of fuel into electricity.
+        The process by which liquid biofuels can be converted is known as
+        gasification, producing biogas. This biogas can then be converted into
+        electricity. Gasification is a process that requires the partial
+        oxidation of the liquid biofuel in a high-temperature environment, in
+        the presence of steam and oxygen. (Thermochemical) For simplicity,
+        gasification involves the breakdown of liquid biofuel molecules into
+        components through pyrolysis( decomposition of organic material in an
+        oxygen-deficient environment under high temperatures), reforming, and
+        water-gas shift reactions (chemical reaction in which CO reacts with H2O
+        to produce CO2 and H2 gas under high temperature). As a result of
+        gasification, the liquid biofuels are now a gaseous-like mixture known
+        as syngas, which is further processed to remove impurities, while
+        increasing methane content, thus creating biogas.<sup
+          ><a href="#24">[24]</a></sup
+        >
+        Like solid biofuel conversion, biogas can be converted into electricity
+        by combustion. However, prior to conversion, the biogas requires
+        extensive purification such as scrubbing, adsorption, and membrane
+        filtration to increase the methane content. Once purified, the gas can
+        be used to generate electricity through combustion in gas engines or
+        turbines. Like prior methods, mechanical energy requires pressure,
+        continuous movement, and heat.<sup><a href="##25">[25]</a></sup>
+        <sup><a href="#26">[26]</a></sup>
+      </p>
+      <br />
+      <br />
+      <div class="container">
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencyclopedia.pub%2Fentry%2F3648&psig=AOvVaw0LYd9II-ZGc32RrwHHEbKF&ust=1713146847415000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCsrL7PwIUDFQAAAAAdAAAAABAJ"
+          target="blank"
+        >
+          <img
+            class="center"
+            src="https://encyclopedia.mdpi.cn/FvmaKibBV6Ue2drNoSdBrfUWByEB"
+            style="margin-left: 650px"
+            alt="Seventh Img of Biofuel Section, Shows the procecess of converting Biogas to Electricity"
+            title="CLICK FOR SOURCE"
+          />
+        </a>
+      </div>
+      <br />
+      <br />
+      <p class="details">
+        The electrical output of a biofuel greatly varies depending on many
+        factors including its type, quality, amount, as well as efficiency of
+        conversion. Assuming that the solid biofuel is being converted to
+        electrical energy by combustion, and mainly consists of plant-based
+        components such as wood; averages around 4.63- 5.1229 kWh per kg.
+        However, this output will vary depending on the materials/composition
+        used as well as the moisture content of the solid biofuel. Similarly,
+        the electrical output will also vary for liquid biofuels such as ethanol
+        and biodiesel, depending on temperature, and quality. From an average
+        value of various sources found online, biodiesel outputs an estimated
+        7.8944 kWh per kg . Ethanol produces roughly 6.5 MWh - 7.444 MWh per kg.
+        Similarly, biogas output will also vary depending on the quality and
+        materials used before production. Since biogas is a gas, the energy
+        output would be measured in terms of the volume of cubic meters. The
+        output for biogas ranges from 2.14 - 6 kWh per cubic meter of biogas
+        (commonly biomethane).<sup><a href="#27">[27]</a></sup>
+        <sup><a href="#28">[28]</a></sup> <sup><a href="#29">[29]</a></sup>
+        <sup><a href="#30">[30]</a></sup> <sup><a href="#31">[31]</a></sup>
+      </p>
+
+      <h1
+        class="sectionHeader"
+        id="Sources"
+        style="margin-left: auto; margin-right: auto; font-size: 30px"
+      >
+        Sources
+      </h1>
+
+      <a
+        class="links"
+        id="1"
+        href="https://biogas.ifas.ufl.edu/publs/bioenergy_ch16_asm_press_2008.pdf"
+        target="blank"
+      >
+        1. BioEnergy (biogas.ifas.ufl.edu)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="2"
+        href="https://www.canr.msu.edu/uploads/files/biodiesel_production.pdf"
+        target="blank"
+      >
+        2. Biofuel Production (canr.msu.edu)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="3"
+        href="https://www.energy.ca.gov/programs-and-topics/programs/clean-transportation-program/clean-transportation-funding-areas-2-1#:~:text=Benefits%20of%20Biomethane&text=Can%20provide%20significant%20reductions%20in,compared%20to%20petroleum%2Dbased%20fuels."
+        target="blank"
+      >
+        3. Biomethane (energy.ca.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="4"
+        href="https://www.energy.ca.gov/programs-and-topics/programs/clean-transportation-program/clean-transportation-funding-areas-2-1#:~:text=Benefits%20of%20Biomethane&text=Can%20provide%20significant%20reductions%20in,compared%20to%20petroleum%2Dbased%20fuels."
+        target="blank"
+      >
+        4. Biomethane Benefit (energy.ca.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="5"
+        href="https://www.eia.gov/energyexplained/biofuels/biofuels-and-the-environment.php#:~:text=Production%20and%20use%20of%20biofuels,need%20to%20import%20petroleum%20fuels."
+        target="blank"
+      >
+        5. Biofuel Impact Environment (eia.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="6"
+        href="https://www.epa.gov/environmental-economics/economics-biofuels#:~:text=Potential%20drawbacks%20include%20changes%20to,pollution%2C%20and%20increased%20food%20costs."
+        target="blank"
+      >
+        6. Biofuel Drawbacks (epa.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="7"
+        href="https://farm-energy.extension.org/introduction-to-biomass-combustion/#:~:text=In%20the%20process%20of%20combustion,%2C%20water%20vapor%2C%20and%20heat.&text=Note%3A%20CH1.44O0.66,the%20combustible%20portion%20of%20biomass."
+        target="blank"
+      >
+        7. Chemcial Equation (farm-energy.extension.org)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="8"
+        href="https://www.jord.one/blog/solid-biofuels-a-viable-alternative-to-traditional-fossil-fuels#:~:text=The%20production%20of%20solid%20biofuels,biofuels%20suitable%20for%20various%20applications."
+        target="blank"
+      >
+        8. Solid Biofuel (jord.one)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="9"
+        href="https://www.sciencedirect.com/science/article/abs/pii/S0048969721038882"
+        target="blank"
+      >
+        9. Production of Biofuel (sciencedirect.com)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="10"
+        href="https://canvas.umn.edu/courses/72625/files/2908628/download?download_frd=1#:~:text=The%20basic%20reaction%20in%20the,moles%20of%20CO2%20are%20produced."
+        target="blank"
+      >
+        10. Fermentation Equation (canvas.umn.edu)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="11"
+        href="https://afdc.energy.gov/fuels/ethanol_production.html#:~:text=Most%20ethanol%20in%20the%20United,distillers%20grains%20and%20carbon%20dioxide."
+        target="blank"
+      >
+        11. Ethanol Production (afdc.energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="12"
+        href="https://www.energy.gov/eere/bioenergy/biofuel-basics#:~:text=Unlike%20other%20renewable%20energy%20sources,first%20generation%20of%20biofuel%20technology."
+        target="blank"
+      >
+        12. Biofuel Basics (energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="13"
+        href="https://afdc.energy.gov/vehicles/diesels_emissions.html#:~:text=Life%20cycle%20analysis%20completed%20by,than%20those%20from%20petroleum%20diesel."
+        target="blank"
+      >
+        13. Biodiesel Emmission (energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="14"
+        href="https://afdc.energy.gov/fuels/biodiesel_production.html#:~:text=Biodiesel%20is%20produced%20from%20vegetable,and%20glycerin%20(a%20coproduct)."
+        target="blank"
+      >
+        14. Biodiesel producing (energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="15"
+        href="https://www.nationalgrid.com/stories/energy-explained/what-is-biogas"
+        target="blank"
+      >
+        15. What is Biogas? (nationalgrid.com)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="16"
+        href="https://pubs.acs.org/doi/10.1021/acs.est.2c00289#:~:text=Life%2Dcycle%20greenhouse%20gas%20emissions,%25%2C%20compared%20with%20petroleum%20diesel."
+        target="blank"
+      >
+        16. Life Cycle of GHGs (pubs.acs.org)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="17"
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6985316/#:~:text=The%20rate%20of%20biogas%20and,of%2031%E2%80%9334%20%C2%B0C."
+        target="blank"
+      >
+        17. Effects of Temperature, Digester Performance (ncbi.nlm.nih.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="18"
+        href="https://www.intechopen.com/chapters/51769"
+        target="blank"
+      >
+        18. Stages of Biogas (intechopen.com)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="19"
+        href="https://www.semanticscholar.org/paper/Waste-to-Energy%3A-A-Focus-on-the-Impact-of-Substrate-Nwokolo-Mukumba/e04fb1c51514ca49abe57b05df05cd8334002c30/figure/0"
+        target="blank"
+      >
+        19. Hydrolysis Chem Equation (semanticscholar.org)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="20"
+        href="https://www.sciencedirect.com/topics/engineering/acidogenesis#:~:text=In%20the%20acidogenesis%20process%2C%20the,sulfide%2C%20and%20ammonia%20are%20produced."
+        target="blank"
+      >
+        20. Overview of Acidogenesis (sciencedirect.com)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="21"
+        href="https://www.tn.gov/environment/program-areas/sw-mm-organics/anaerobic-digestion.html#:~:text=Hydrolysis%2D%20the%20first%20step%20in,can%20further%20process%20the%20material."
+        target="blank"
+      >
+        21. Anaerobic Digestion (tn.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="22"
+        href="https://www.youtube.com/watch?v=aULRryCVMyY"
+        target="blank"
+      >
+        22. Anaerobic Digester procecess (youtube.com)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="23"
+        href="https://www.epa.gov/agstar/how-does-anaerobic-digestion-work#:~:text=With%20appropriate%20treatment%2C%20both%20the,and%2For%20simply%20as%20soil"
+        target="blank"
+      >
+        23. How does anaerobic digestion work (epa.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="24"
+        href="https://www.energy.gov/eere/bioenergy/biopower-basics#:~:text=Most%20electricity%20generated%20from%20biomass,drives%20a%20generator%2C%20producing%20electricity."
+        target="blank"
+      >
+        24. Direct Combustion (energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="25"
+        href="https://www.energy.gov/eere/bioenergy/biofuel-basics#:~:text=Gasification%20follows%20a%20slightly%20similar,of%20carbon%20monoxide%20and%20hydrogen."
+        target="blank"
+      >
+        25. Biogas Gasification (energy.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="26"
+        href="https://www.eesi.org/papers/view/fact-sheet-biogasconverting-waste-to-energy#:~:text=Biogas%20can%20be%20used%20for,sold%20onto%20the%20electric%20grid."
+        target="blank"
+      >
+        26. Biogas Conversion Fact Sheet (eesi.org)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="27"
+        href="http://bioresproject.eu/wp-content/uploads/2016/11/Price-overviews-of-woody-bioenergy-products-in-Croatia-October-2016.pdf"
+        target="blank"
+      >
+        27. Conversion Link 1 (bioresproject.eu)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="28"
+        href="https://www.nrc.gov/docs/ML1409/ML14093A260.pdf"
+        target="blank"
+      >
+        28. Conversion Link 2 (nrc.gov)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="29"
+        href="https://cdn.cdp.net/cdp-production/cms/guidance_docs/pdfs/000/000/477/original/CDP-Conversion-of-fuel-data-to-MWh.pdf?1479755175"
+        target="blank"
+      >
+        29. Conversion Link 3 (cdn.cdp.net)</a
+      >
+      <br />
+      <a
+        class="links"
+        id="30"
+        href="https://www.inchcalculator.com/convert/megajoule-to-kilowatt-hour/"
+        target="blank"
+      >
+        30. Energy Conversion Calculator (inchcalculator.com)</a
+      >
+      <br />
+      <a
+      class="links"
+      id="31"
+      href="https://en.wikipedia.org/wiki/Energy_content_of_biofuel"
+      target="blank"
+    >
+      31. Not Wikipedia (wikipedia.org)</a
+    >
+    <br />
+
+      <div class="footer">
+        <div class="footer-heading-1">
+          <h1 class="footerPurpose">Purpose</h1>
+
+          <p class="footerDescription">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta
+            voluptatibus omnis qui voluptas. Corrupti ipsam, aliquid nulla
+            similique odio quam sunt tempora tenetur minima nobis dicta aut.
+            Nam, eius.
+          </p>
+        </div>
+        <div class="footer-heading-2">
+          <h1 class="footerPurpose">Credits</h1>
+          <p class="footerDescription">Andy Dong</p>
+          <p class="footerDescription">Jayden Chang</p>
+          <p class="footerDescription">Stephan Saykin</p>
+        </div>
+        <div class="footer-heading-3">
+          <h1 class="footerPurpose">Connect with FLHS</h1>
+          <p class="footerDescription">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta
+            voluptatibus omnis qui voluptas. Corrupti ipsam, aliquid nulla
+            similique odio quam sunt tempora tenetur minima nobis dicta aut.
+            Nam, eius.
+          </p>
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
